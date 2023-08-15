@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="bg-cover bg-center h-screen flex justify-center items-center" style="background-image: url('img/bg.jpg');">
+        <div class="h-[600px] w-[850px] bg-gray-200 backdrop-filter backdrop-blur-md bg-opacity-10 rounded" >
+            <h1 class="text-white text-3xl text-center my-12">
+                Let's go some Mooooooooooooooony!!!!
+            </h1> 
+            <div class="grid grid-cols-3  gap-4 mx-auto w-9/12 ">
+                <div class="bg-gray-200 backdrop-filter backdrop-blur-md bg-opacity-10  p-6 text-white rounded-xl">
+                    <h2>Deposit</h2>
+                    <h1 class="text-5xl font-bold">$<span id="deposit-total">00</span> </h1>
+                </div>
+                <div class="bg-gray-200 backdrop-filter backdrop-blur-md bg-opacity-10  p-6 text-white rounded-xl">
+                    <h2>Withdrow</h2>
+                    <h1 class="text-5xl font-bold">$ <span id="withdrow-input">00</span> </h1>
+                </div>
+                <div class="bg-gray-200 backdrop-filter backdrop-blur-md bg-opacity-10  p-6 text-white rounded-xl">
+                    <h2>Blance</h2>
+                    <h1 class="text-5xl font-bold">$<span id="balance-field">550</span> </h1>
+                </div>
+            </div>
+            <!-- deposit and withdrow -->
+
+            <div class="grid grid-cols-2  gap-4 mt-12 mx-auto w-9/12 ">
+                <div class="bg-gray-200 backdrop-filter backdrop-blur-md bg-opacity-10 space-y-2  p-6  rounded-xl">
+                    <h2 class="text-white">Please Deposit</h2>
+                    <input type="text" id="deposit-field" placeholder="$ Amount you want to deposit" class="input input-bordered w-[265px]" />
+                    <button id="btn-deposit" class="btn glass  ">Deposit</button>
+                </div>
+                <div class="bg-gray-200 backdrop-filter backdrop-blur-md bg-opacity-10 space-y-2  p-6 rounded-xl">
+                    <h2 class="text-white">Please Withdrow</h2>
+                    <input type="text" id="withdrow-field" placeholder="$ Amount you want to withdrow" class="input input-bordered w-[265px]" />
+                    <button id="btn-withdrow" class="btn glass  ">Withdrow</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <script src="js/deposite.js"></script>
+    <script src="js/withdrow.js"></script>
+</body>
+</html>
